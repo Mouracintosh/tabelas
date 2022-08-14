@@ -1,0 +1,62 @@
+<!--
+    two stores
+        how many products were produced and how many sold
+        grouped by product names
+
+    rowspn="" esse atributo permite ocupar quantas linhas quiser de uma coluna da tabela
+    colspn="" esse atributo permite ocupar quantas colunas quiser de uma linha da tabela
+
+    <colgroup> tag para agrupar e estilizar colunas
+    <col> coluna
+
+    scope="" atributo que indica para os leitores de tela a qual tipo de escopo cabeçalho se refere:
+            -col - refere-se a uma coluna
+            -colgroup - agrupa colunas
+            -row - refere-se a uma linha
+            -rowgroup - agrupa linhas
+
+
+-->
+
+ <table>
+
+    <caption>Produced x Sold for store</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red">
+        <col span="2" style="background-color: blue">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <thr rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Adidas</th>
+            <th colspan="2" scope="colgroup">Nike</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produced</th>
+            <th scope="col">Sold</th>
+            <th scope="col">Produced</th>
+            <th scope="col">Sold</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Football boots</th>
+            <td>500.000</td>
+            <td>450.000</td>
+            <td>500.000</td>
+            <td>480.000</td>
+        </tr>
+        <tr>
+            <th scope="row">T-shirt</th>
+            <td>600.000</td>
+            <td>589.000</td>
+            <td>600.000</td>
+            <td>578.000</td>
+        </tr>
+    </tbody>
+ </table>
